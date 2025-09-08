@@ -6,7 +6,7 @@ body{
 header{
     background-color: white;
     color: black;
-    padding: 30px;
+    padding: 30px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,6 +112,13 @@ article h3{
 article p{
     line-height: 1.5;
     margin: 5px 0;
+    font-size: 1rem;
+}
+
+article a{
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 footer{
@@ -135,17 +142,21 @@ footer p{
 }
 
 @media (min-width: 576px){
-    header h2{
-        font-size: 1.5rem;
+    header{
+        padding: 50px;
     }
 
+    header h2{
+        font-size: 3.5rem;
+    }
 
     a{
-        font-size: 0.875rem;
+        font-size: 2rem;
+        font-weight: 600;
     }
 
     main{
-        grid-template-columns: 1em 1fr 1fr 1fr 1em;
+        grid-template-columns: 2em 1fr 1fr 1fr 2em;
         grid-template-areas:
         "new new new new new"
         "... one two three ..."
@@ -155,5 +166,42 @@ footer p{
 
     .new-post{
         margin-bottom: 30px;
+        padding: 40px;
+        min-height: 600px;
+    }
+
+    .new-post h1{
+        font-size: 2.5rem;
+        margin: 15px 0;
+    }
+
+    .new-post p{
+        font-size: 1.875rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    article p{
+        font-size: 1.875rem;
+    }
+
+    article a{
+        font-weight: 200;
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+
+    footer{
+        padding: 40px;
+    }
+
+    footer h4{
+        font-size: 2rem;
+    }
+
+    footer p{
+        font-size: 1.25rem;
     }
 }
