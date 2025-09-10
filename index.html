@@ -6,23 +6,31 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h2>My Learning Journal</h2>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about me</a></li>
-            </ul>
-        </nav>
+        <div class="header-actions">
+            <button class="hamburger" aria-label="Open navigation" aria-controls="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
         <section class="new-post">
-            <p>juky 23, 2025</p>
+            <p>july 23, 2025</p>
             <h1>My new journey as a bootcamp student.</h1>
             <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
         </section>
@@ -76,6 +84,6 @@
         <h4>My Learning Journal</h4>
         <p>Copyright ©2025</p>
     </footer>
-    
+<script src="script.js"></script>
 </body>
 </html>

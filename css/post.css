@@ -12,6 +12,13 @@ header{
     align-items: center;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
 header h2{
     margin: 0;
     font-size: 1rem;
@@ -33,6 +40,23 @@ a{
     text-transform: uppercase;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
 
 main{
     display: grid;
@@ -114,17 +138,36 @@ footer p{
     font-size: 0.75rem;
 }
 
+@media (max-width: 575px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+  .nav.open ul {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
 @media(min-width: 576px){
     header{
-        padding: 50px;
+        padding: 30px;
     }
 
     header h2{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     a{
-        font-size: 2rem;
+        font-size: 1.50rem;
         font-weight: 600;
     }
 
@@ -183,7 +226,7 @@ footer p{
     }
 
     article a{
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1.5rem;
         text-transform: none;
     }
